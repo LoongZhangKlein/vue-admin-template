@@ -98,11 +98,62 @@ export const constantRoutes = [
         path: 'index',
         name: 'Form',
         component: () => import('@/views/form/index'),
-        meta: { title: '表单', icon: 'form' }
+        meta: { title: '药品展示', icon: 'form' }
       }
     ]
   },
-
+  // 医院推荐页面
+  {
+    path: '/hospital-recommend',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'Form',
+        component: () => import('@/views/hospital/hospital-recommend'),
+        meta: { title: '医院推荐', icon: 'form' }
+      }
+    ]
+  },
+   // 医学常识
+   {
+    path: '/medical-knowledge',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'Form',
+        component: () => import('@/views/hospital/medical-knowledge'),
+        meta: { title: '医学常识', icon: 'form' }
+      }
+    ]
+  },
+   // 医生问诊
+   {
+    path: '/doctor-consultation',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'Form',
+        component: () => import('@/views/hospital/doctor-consultation'),
+        meta: { title: '医生问诊', icon: 'form' }
+      }
+    ]
+  },
+  // 统计报表
+  {
+    path: '/data-statistics',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'Form',
+        component: () => import('@/views/data/data-statistics'),
+        meta: { title: '统计报表', icon: 'form' }
+      }
+    ]
+  },
   {
     path: '/nested',
     component: Layout,
