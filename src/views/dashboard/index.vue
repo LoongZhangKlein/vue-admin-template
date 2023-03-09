@@ -1,6 +1,7 @@
 <template>
   <div class="dashboard-container">
     <div class="dashboard-text">我的Tina啊首页用户名字子: {{ name }}</div>
+    <div class="dashboard-text">测试loongzhang首页用户名字子: {{ name }}</div>
   </div>
 </template>
 
